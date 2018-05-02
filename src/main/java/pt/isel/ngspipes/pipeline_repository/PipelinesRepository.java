@@ -2,7 +2,7 @@ package pt.isel.ngspipes.pipeline_repository;
 
 import java.util.Map;
 
-public abstract class PipelineRepository implements IPipelineRepository {
+public abstract class PipelinesRepository implements IPipelinesRepository {
 
     private String location;
     @Override public String getLocation() throws PipelineRepositoryException {  return this.location; }
@@ -12,7 +12,7 @@ public abstract class PipelineRepository implements IPipelineRepository {
 
 
 
-    public PipelineRepository(String location, Map<String, Object> config) {
+    public PipelinesRepository(String location, Map<String, Object> config) {
         this.location = location;
         this.config = config;
     }

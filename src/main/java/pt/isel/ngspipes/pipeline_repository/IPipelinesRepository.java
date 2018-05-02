@@ -5,7 +5,7 @@ import pt.isel.ngspipes.pipeline_descriptor.IPipelineDescriptor;
 import java.util.Collection;
 import java.util.Map;
 
-public interface IPipelineRepository {
+public interface IPipelinesRepository {
 
     String getLocation() throws PipelineRepositoryException;
     Map<String, Object> getConfig() throws PipelineRepositoryException;
