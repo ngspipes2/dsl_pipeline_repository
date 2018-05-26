@@ -7,13 +7,13 @@ import java.util.Map;
 
 public interface IPipelinesRepository {
 
-    String getLocation() throws PipelineRepositoryException;
-    Map<String, Object> getConfig() throws PipelineRepositoryException;
+    String getLocation() throws PipelinesRepositoryException;
+    Map<String, Object> getConfig() throws PipelinesRepositoryException;
 
-    Collection<IPipelineDescriptor> getAll() throws PipelineRepositoryException;
-    IPipelineDescriptor get(String pipelineName) throws PipelineRepositoryException;
-    void insert(IPipelineDescriptor pipeline) throws PipelineRepositoryException;
-    void update(IPipelineDescriptor pipeline) throws PipelineRepositoryException;
-    void delete(String pipelineName) throws PipelineRepositoryException;
+    Collection<IPipelineDescriptor> getAll() throws PipelinesRepositoryException;
+    IPipelineDescriptor get(String pipelineName) throws PipelinesRepositoryException;
+    void insert(IPipelineDescriptor pipeline) throws PipelinesRepositoryException;
+    void update(IPipelineDescriptor pipeline) throws PipelinesRepositoryException;
+    void delete(String pipelineName) throws PipelinesRepositoryException;
 
 }
