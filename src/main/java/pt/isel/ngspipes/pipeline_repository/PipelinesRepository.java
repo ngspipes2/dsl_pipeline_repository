@@ -4,10 +4,10 @@ import java.util.Map;
 
 public abstract class PipelinesRepository implements IPipelinesRepository {
 
-    private String location;
+    protected String location;
     @Override public String getLocation() throws PipelinesRepositoryException {  return this.location; }
 
-    private Map<String, Object> config;
+    protected Map<String, Object> config;
     @Override public Map<String, Object> getConfig() throws PipelinesRepositoryException { return this.config; }
 
 
