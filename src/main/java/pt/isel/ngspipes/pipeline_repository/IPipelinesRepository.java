@@ -10,6 +10,9 @@ public interface IPipelinesRepository {
     String getLocation() throws PipelinesRepositoryException;
     Map<String, Object> getConfig() throws PipelinesRepositoryException;
 
+    byte[] getLogo() throws PipelinesRepositoryException;
+    void setLogo(byte[] logo) throws PipelinesRepositoryException;
+
     Collection<IPipelineDescriptor> getAll() throws PipelinesRepositoryException;
     IPipelineDescriptor get(String pipelineName) throws PipelinesRepositoryException;
     void insert(IPipelineDescriptor pipeline) throws PipelinesRepositoryException;
