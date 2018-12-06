@@ -13,6 +13,8 @@ public interface IPipelinesRepository {
     byte[] getLogo() throws PipelinesRepositoryException;
     void setLogo(byte[] logo) throws PipelinesRepositoryException;
 
+    Collection<String> getPipelinesNames() throws PipelinesRepositoryException;
+
     Collection<IPipelineDescriptor> getAll() throws PipelinesRepositoryException;
     IPipelineDescriptor get(String pipelineName) throws PipelinesRepositoryException;
     void insert(IPipelineDescriptor pipeline) throws PipelinesRepositoryException;
